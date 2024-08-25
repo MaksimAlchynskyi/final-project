@@ -1,0 +1,160 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+.modal-content {
+    background-color: #FFF2FD;
+    margin: 10px auto;
+    padding: 25px 15px;
+
+    border: 1px solid #888;
+    width: 85%;
+    height: max-content;
+    border-radius: 137px 0px;
+}
+.close {
+    fill: blue;
+    width: 17px;
+    height: 17px;
+    margin-bottom: 33px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.kvadrat {
+    display: none;
+    width: 233px;
+    height: 416px;
+    
+}
+.kolo {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+ 
+.wrapper-content {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 8px;
+}
+
+.standart {
+    margin-bottom: 20px;
+}
+
+.vip {
+    margin-bottom: 10px;
+}
+
+.buy {
+    display: block;
+    margin: 0 auto;
+    width: 145px;
+    height: 40px;
+    border-radius: 5px; 
+    background-color: #4C00FE;
+
+
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.inf {
+    display: block;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #4C00FE; 
+    background-color: #FFF2FD;
+    padding: 10px 0;
+    margin: 0 auto;
+
+    color: #4C00FE;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.title-text {
+    color: #DC56C5;
+
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px 0 0 0;
+
+}
+
+.p-text {
+    color: #0E0E0E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin: 0;
+}
+
+.p-prices {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+@media screen and (min-width:768px) {
+    .modal-content {
+        width: 595px;
+    }
+
+    .kvadrat {
+        display: block;
+        width: 233px;
+        height: 416px;
+    }
+
+    .title-text {
+        text-align: left;
+    }
+
+    .p-text {
+        text-align: left;
+    }    
+
+    .buy {
+        margin: 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .modal-content {
+        width: 900px;
+        padding: 0 30px;
+    }
+
+    .kvadrat {
+        width: 300px;
+        height: 541px;
+    }
+
+    .wrapper-content {
+        margin-bottom: 20px;
+    }
+}
